@@ -1,0 +1,48 @@
+前提条件
+•	実装言語：JavaScript (Node.js)
+•	実行環境：Node.js v24.5.0
+•	動作確認済OS：macOS
+
+
+プロジェクト構成
+cli_app-task/
+├── No.1/
+│   ├── main.js
+│   ├── 00_sample1.in
+│   ├── 00_sample2.in
+├── No.2/
+│   ├── main.js
+│   ├── 00_sample1.in
+│   ├── 00_sample2.in
+│   ├── 00_sample3.in
+├── No.3/
+│   ├── main.js
+│   ├── 00_sample1.in
+│   ├── 00_sample2.in
+└── ReadMe
+└── package.json
+
+
+実行手順
+1.ターミナルで本プロジェクトのルートディレクトリに移動する。
+$ cd cli-app-task
+
+各問題ごとに以下のように実行する。
+
+No.1の実行方法
+$ node No.1/main.js < No.1/00_sample1.in 
+$ node No.1/main.js < No.1/00_sample2.in 
+
+No.2の実行方法
+$ node No.2/main.js < No.2/00_sample1.in 
+$ node No.2/main.js < No.2/00_sample2.in 
+
+No.3の実行方法
+$ node No.3/main.js < No.3/00_sample1.in 
+$ node No.3/main.js < No.3/00_sample2.in 
+
+
+No.2に関して  
+入力制約「S の長さが 1 以上 10⁶ 以下」のケースでは、現在の実装で処理時間が長くなることを確認しています。  
+現時点では、より高速に処理する実装方法を見つけられていません。
+処理が早くなる方法を模索していきたいと思います。
